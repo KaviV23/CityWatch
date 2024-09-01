@@ -1,0 +1,1077 @@
+@font-face {
+    font-family: Lato;
+    src: url(fonts/Lato/Lato-Regular.ttf);
+}
+
+@font-face {
+    font-family: Lato;
+    src: url(fonts/Lato/Lato-Bold.ttf);
+    font-weight: bold;
+}
+
+body {
+    margin: 0;
+}
+
+h1, h2, h3, p {
+    font-family: Lato, sans-serif;
+}
+
+/* All Pages */
+
+header {
+    height: 80px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color: #efefef;
+    padding: 0 100px;
+    border-bottom: 10px solid #46109C;
+}
+
+header h1 {
+    color: #46109C;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+header a {
+    text-decoration: none;
+}
+
+#navbar-container {
+    display:flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#navbar-container nav {
+    background-color: #46109C;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    gap: 6px;
+    border-radius: 18px;
+}
+
+#navbar-container nav button {
+    background: none;
+    border: none;
+    border-radius: 12px;
+    color: #efefef;
+    padding: 2px 8px;
+    cursor: pointer;
+    transition: 100ms ease-out;
+}
+
+#navbar-container nav button:hover {
+    background-color: #06AED5;
+    transition: 100ms ease-out;
+}
+
+#navbar-container nav button.active {
+    background-color: #efefef;
+    color: black;
+}
+
+#navbar-container img {
+    height: 33px;
+    background-color: lightgray;
+    border: 5px solid #46109C;
+    transition: 100ms ease-out;
+    border-radius: 33px;
+}
+
+#navbar-container img:hover {
+    border: 5px solid #06AED5;
+    transition: 100ms ease-out;
+}
+
+.adminbar {
+    background-color: #06AED5;
+    font-family: Lato, Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #EFEFEF;
+    padding: 2px;
+}
+
+footer {
+    height: 80px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color: #46109C;
+    padding: 0 100px;
+    color: #efefef;
+}
+
+footer h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+footer div {
+    display: flex;
+    gap: 15px;
+}
+
+footer img {
+    height: 36px;
+    color: #efefef;
+}
+
+/* Home */
+
+.banner-home {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(0deg, rgba(70, 16, 156, 0.3), rgba(70, 16, 156, 0.3)), url("images/banners/banner-home.webp");
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.36);
+    color: #fff;
+}
+
+.banner h1 {
+    margin: 0;  
+    font-size: 48px;
+}
+
+.banner h2 {
+    margin: 24px 0 0 0; 
+    font-weight: normal;
+}
+
+.about-us {
+    display: flex;
+    background-color: #efefef;
+}
+
+.about-us h1 {
+    color: #46109C;
+    margin: 0 0 6px 0;
+}
+
+.about-us h2 {
+    margin: 0 0 15px 0;
+}
+
+.about-us p {
+    line-height: 150%;
+}
+
+.about-us img {
+    width: 150%;
+    max-width: 519px;
+    object-fit: cover;
+    object-position: 0;
+}
+
+.about-us > * {
+    margin: 30px;
+}
+
+@media (max-width: 1060px) {
+    .about-us {
+        flex-direction: column-reverse;
+    }
+
+    .about-us img {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.participate {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background: linear-gradient(180deg, #EFEFEF 0%, rgba(70, 16, 156, 0) 15%), url(images/banners/banner-participate-gradient.jpg);
+    background-size: cover;
+    background-position: 100%;
+}
+
+.participate-textarea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.36); 
+    color: #EFEFEF;
+}
+
+@media (max-width: 1060px) {
+    .participate {
+        grid-template-columns: auto;
+        grid-template-rows: 250px;
+    }
+
+    .participate img {
+        display: none;
+    }
+}
+
+.participate-textarea h1 {
+    font-size: 38px;
+}
+
+.participate img {
+    width: 80%;
+    margin: 30px auto;
+}
+
+.loginregister {
+    display: flex;
+    gap: 20px;
+}
+
+.loginregister button {
+    border: 0;
+    background-color: #06AED5;
+    color: white;
+    height: 30px;
+    width: 80px;
+    border-radius: 30px;
+    transition: 100ms ease-in-out;
+}
+
+.loginregister button:hover {
+    background-color: #EFEFEF;
+    color: #06AED5;
+    transition: 100ms ease-in-out;
+}
+
+/* Post Hub */
+#posthub-body {
+    background-color: #d9d9d9;
+}
+
+#posthub-container {
+    display: grid;
+    grid-template-columns: 300px auto;
+    min-height: 100vh;
+}
+
+#filter-box {
+    margin: 30px 60px;
+
+}
+
+#filter-box p:first-of-type {
+    margin-top: 0;
+}
+
+#filter-box form {
+    background-color: #efefef;
+    height: fit-content;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#filter-box form label {
+    font-family: Lato, Arial;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+#filter-box form select {
+    width: 100%;
+    background: none;
+    border: 0;
+    border-bottom: 1px solid #000;
+}
+
+#sortbtn {
+    background-color: #06AED5;
+    border: 2px solid #06AED5;
+    border-radius: 20px;
+    padding: 1px;
+    color: #efefef;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    transition: 100ms ease-out;
+}
+
+#sortbtn:hover {
+    background-color: #efefef;
+    color: #000;
+    transition: 100ms ease-out;
+}
+
+#createpostbtn {
+    margin-top: 10px;
+    background-color: #06AED5;
+    border: 0;
+    border-radius: 20px;
+    padding: 5px;
+    color: #efefef;
+    width: 100%;
+    transition: 100ms ease-out;
+}
+
+#createpostbtn:hover {
+    background-color: #efefef;
+    color: #000;
+    padding: 3;
+    border: 2px solid #06AED5;
+    transition: 100ms ease-out;
+}
+
+#posts-box {
+    margin: 30px 60px 30px 0;
+}
+
+.post-container {
+    background-color: #efefef;
+    display: grid;
+    grid-template-columns: 200px auto;
+    column-gap: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.post-container:nth-child(n+2) {
+    margin-top: 10px;
+    min-width: 630px;
+}
+
+.post-container img {
+    width: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.post-info {
+    padding: 10px 0;
+    position: relative;
+}
+
+.post-info h2, .post-info p {
+    margin: 0 0;
+    line-height: 150%;
+}
+
+.post-info > p {
+    margin-bottom: 70px;
+}
+
+.post-info > div { /* Expand button & Statistics */
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+}
+
+.post-info div p {
+    display: inline;
+}
+
+.post-info div span {
+    position: absolute;
+    right: 10px;
+}
+
+.post-info #votescomments {
+    display: inline;
+}
+
+.post-info #expandbtn {
+    padding: 2px 10px;
+    margin-right: 10px;
+    border: 2px solid #06AED5;
+    background-color: #06AED5;
+    color: #EFEFEF;
+    border-radius: 10px;
+    font-family: Lato, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    transition: 100ms ease-out;
+}
+
+.post-info #expandbtn:hover {
+    background-color: #efefef;
+    color: #000;
+}
+
+/* Expanded Posthub */
+
+body.expandedPost {
+    background-color: #d9d9d9;
+}
+
+.expandedpost {
+    width: 50%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #efefef;
+    border-radius: 10px;
+    position: relative;
+}
+
+.expandedpost > h1, .expandedpost > p {
+    margin: 0;
+    line-height: 150%;
+}
+
+.expandedpost #post-username {
+    font-family: Lato, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #adadad;
+    margin-right: 10px;
+}
+
+.expandedpost .delete-btn {
+    background-color: red;
+    color: #efefef;
+    border: 2px solid red;
+    border-radius: 15px;
+    padding: 3px 8px;
+    margin-top: 10px;
+    transition: 100ms ease-out;
+}
+
+.expandedpost .delete-btn:hover {
+    background-color: #efefef;
+    color: red;
+}
+
+.expandedpost > img {
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.expandedpost .status {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.expandedpost .status button {
+    background-color: #06AED5;
+    border: 1px solid #06AED5;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1.5px;
+    cursor: pointer;
+    transition: 100ms ease-out;
+}
+
+.expandedpost .status button:hover {
+    background-color: #efefef;
+}
+
+.expandedpost .status img {
+    height: 24px;
+}
+
+.expandedpost .status p:last-of-type { /* pending/resolving/resolved */
+    margin-left: auto;
+    background-color: #adadad;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+.expandedpost .status a {
+    text-decoration: none;
+    color: #efefef;
+}
+
+.expandedpost #status-sel {
+    position: absolute;
+    right: 0px;
+    bottom: 0;
+    background-color: #EFEFEF;
+    border-radius: 10px;
+    display: initial;
+    transition: right 300ms ease-out;
+    z-index: -1;
+}
+
+.expandedpost #status-sel > * {
+    position: relative;
+}
+
+.expandedpost #status-sel p {
+    font-size: 14px;
+    text-align: center;
+    margin: 10px 0 0 0;
+}
+
+.expandedpost #status-sel ul {
+    padding: 10px;
+    margin: 0;
+}
+
+.expandedpost #status-sel li {
+    list-style: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.expandedpost #status-sel li:nth-child(1) button {
+    background-color: #adadad;
+    color: #efefef;
+    border: 1px solid #adadad;
+    padding: 3px;
+    width: 70px;
+    border-radius: 20px;
+}
+
+.expandedpost #status-sel li:nth-child(2) button {
+    margin: 5px 0;
+    background-color: orange;
+    color: #efefef;
+    border: 1px solid orange;
+    padding: 3px;
+    width: 70px;
+    border-radius: 20px;
+}
+
+.expandedpost #status-sel li:nth-child(3) button {
+    background-color: green;
+    color: #efefef;
+    border: 1px solid green;
+    padding: 3px;
+    width: 70px;
+    border-radius: 20px;
+}
+
+
+.expandedpost #status-sel li button:hover {
+    border: 1px solid #999;
+    color: #000;
+}
+
+.expandedpost .status p {
+    margin: 0;
+}
+
+.comments {
+    width: 50%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #efefef;
+    border-radius: 10px;
+}
+
+.comments h2 {
+    margin: 0;
+}
+
+.comments > form {
+    display: flex;
+    align-items: center;
+}
+
+.comments > form input {
+    background: none;
+    border: 0;
+    border-bottom: 1px solid #adadad;
+    padding: 5px;
+    width: 80%;
+    margin: 10px auto;
+}
+.comments > form input::placeholder {
+    color: #adadad;
+    opacity: 1;
+    font-family: Lato, Arial, Helvetica, sans-serif;
+}
+
+.comments > form button {
+    background-color: #06AED5;
+    color: #efefef;
+    border: 2px solid #06AED5;
+    border-radius: 30px;
+    width: 100px;
+    height: 24px;
+    transition: 100ms ease-out;
+}
+
+.comments > form button:hover {
+    background-color: #efefef;
+    color: #000;
+}
+
+.comments h3, .comments p {
+    margin: 0;
+    line-height: 150%;
+}
+
+.comments h3 {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+#no-comments-msg {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.comments > div .interactions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.comments > div .interactions img {
+    height: 18px;
+}
+
+.comments > div .interactions p {
+    margin: 0;
+}
+
+.interactions button.vote { /* for both comments and post */
+    background-color: #06AED5;
+    border: 1px solid #06AED5;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1px;
+    cursor: pointer;
+}
+
+.interactions button.vote:hover { /* for both comments and post */
+    background-color: #efefef;
+    transition: 100ms ease-out;
+}
+
+.comments > div .interactions button.delete-btn {
+    background: none;
+    border: 0;
+    color: red;
+    text-decoration: underline;
+    padding: 0;
+    cursor: pointer;
+}
+
+
+
+/* Contact Us Page */
+
+.banner-contact {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(0deg, rgba(70, 16, 156, 0.3), rgba(70, 16, 156, 0.3)), url("images/banners/banner-contact.webp");
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.36);
+    color: #fff;
+}
+
+.wrapper-contact {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 36px 100px;
+    background-color:#efefef ;
+}
+
+.wrapper-contact h1 {
+    color: #46109C;
+    margin: 0 0 40px 0;
+}
+
+.wrapper-contact p {
+    font-size: 16px;
+}
+
+.wrapper-contact #feedback-form {
+    width: 45.5%;
+}
+
+/* Login Page / Register | Registration Page */
+
+body.loginpage {
+    background-color: #d9d9d9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.loginpage .container {
+    width: fit-content;
+    padding: 10px 20px;
+    background-color: #efefef;
+    border-top: 7px solid #46109C;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.loginpage .container h1 {
+    margin-bottom: 25px;
+    color: #46109C;
+    text-align: center;
+    font-size: 40px;
+}
+
+.loginpage .container a {
+    color: #06AED5;
+}
+
+.loginpage .container p {
+    font-size: 12px;
+    color: #adadad;
+}
+
+.loginpage .container img {
+    height: 50px;
+    width: 50px;
+    background-color: #d9d9d9;
+    border: 5px solid #46109C;
+    border-radius: 50px;
+    margin-bottom: 25px;
+}
+
+.loginpage .container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    position: relative;
+}
+
+.loginpage .container form div.fnamelname {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+}
+
+.loginpage .container input {
+    background: none;
+    border: 0;
+    border-bottom: 1px solid #adadad;
+    width: 100%;
+}
+
+.loginpage .container form div input {
+    width: 100%;
+}
+
+.loginpage .container input::placeholder {
+    color: #adadad;
+    opacity: 1;
+}
+
+.loginpage .container button {
+    width: 50%;
+    background-color: #06AED5;
+    border: 0;
+    color: #efefef;
+    padding: 5px;
+    border-radius: 20px;
+    margin-top: 25px;
+    transition: background-color 100ms ease-out;
+}
+
+.loginpage .container button:hover {
+    background-color: #efefef;
+    color: #06AED5;
+    border: 2px solid #06AED5;
+    padding: 3px;
+    transition: background-color 100ms ease-out;
+} 
+
+#loginerror p {
+    font-family: Lato, Arial;
+    font-size: 16px;
+    font-weight: bold;
+    color: red;
+}
+
+body.loginpage .passRequirements {
+    display: block;
+    position: absolute;
+    font-family: Lato, Arial, Helvetica, sans-serif;
+    left: 107%;
+    width: 300px;
+}
+
+@media (max-width: 1100px) {
+    body.loginpage .passRequirements {
+        position: initial;
+    }
+
+    .loginpage .container button {
+        margin-top: 0;
+    }
+}
+
+/* Profile Page */
+
+body.profile {
+    background-color: #d9d9d9;
+}
+
+.profile-flexcontainer {
+    background-color: #efefef;
+    border-radius: 10px;
+    width: 50%;
+    min-width: 640px;
+    margin: 20px auto;
+    padding: 10px 20px;
+}
+
+.profile-flexcontainer h1 {
+    margin: 10px 0; 
+}
+
+.profile-flexcontainer .section1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-flexcontainer .section1 button {
+    background-color: #06AED5;
+    border: 2px solid #06AED5;
+    border-radius: 20px;
+    height: 36px;
+    color: #efefef;
+    transition: 100ms ease-out;
+}
+
+.profile-flexcontainer .section1 button:hover {
+    background-color: #efefef;
+    border: 2px solid #06AED5;
+    color: #000;
+}
+
+.profile-flexcontainer .section2 {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1.5fr;
+    grid-template-rows: auto auto auto auto;
+    column-gap: 20px;
+}
+
+.profile-flexcontainer .section2 img {
+    background-color: #d9d9d9;
+    border-radius: 15px;
+    width: 100%;
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+
+.profile-flexcontainer .section2 h2 {
+    margin: 0;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.profile-flexcontainer .section2 input {
+    background: none;
+    border: 0;
+    border-bottom: 1px solid #adadad;
+}
+
+.profile-flexcontainer .section2 input::placeholder {
+    opacity: 1;
+    color: #a9a9a9;
+}
+
+.profile-flexcontainer .section2 input:nth-of-type(3), .profile-flexcontainer .section2 input:nth-of-type(4) {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.admin-disabled {
+    cursor: not-allowed;
+}
+
+.profile-flexcontainer .section1 button.admin-disabled {
+    background-color: #adadad;
+    border: 2px solid #adadad;
+    border-radius: 20px;
+    height: 36px;
+    color: #d9d9d9;
+    transition: 100ms ease-out;
+}
+
+.profile-flexcontainer .section1 button:hover {
+    background-color: #adadad;
+    border: 2px solid #adadad;
+    color: #d9d9d9;
+}
+
+.profile-flexcontainer .section3 div.left {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    gap: 20px;
+}
+
+.profile-flexcontainer .section3 div.right {
+    font-family: Lato, Arial, Helvetica, sans-serif;
+    position: absolute;
+    left: 110%;
+    width: 300px;
+}
+
+.profile-flexcontainer .section3 input {
+    background: none;
+    border: 0;
+    border-bottom: 1px solid #adadad;
+    padding: 5px;
+}
+
+.profile-flexcontainer .section3 button {
+    width: fit-content;
+    background-color: #06AED5;
+    border: 2px solid #06AED5;
+    border-radius: 20px;
+    padding: 2px;
+    color: #efefef;
+    transition: 100ms ease-out;
+    cursor: pointer;
+}
+
+.profile-flexcontainer .section3 button:hover {
+    background-color: #efefef;;
+    color: #000;
+}
+
+.profile-flexcontainer .logout input {
+    background-color: red;
+    color: #efefef;
+    border: 2px solid red;
+    border-radius: 15px;
+    padding: 3px 8px;
+    transition: 100ms ease-out;
+}
+
+.profile-flexcontainer .logout input:hover {
+    background-color: #efefef;
+    color: red;
+    cursor: pointer;
+}
+
+.profile-flexcontainer .section4 p {
+    font-weight: bold;
+}
+
+.profile-flexcontainer .section4 label {
+    font-family: Lato, Arial, Helvetica, sans-serif;
+    margin: 0 10px 0 5px;
+}
+
+.profile-flexcontainer .section4 button {
+    background-color: red;
+    color: #efefef;
+    border: 2px solid red;
+    border-radius: 15px;
+    padding: 3px 8px;
+    transition: 100ms ease-out;
+}
+
+.profile-flexcontainer .section4 button:hover {
+    background-color: #efefef;
+    color: red;
+    cursor: pointer;
+}
+
+.profile-flexcontainer .section4 button.admin-disabled {
+    background-color: #adadad;
+    border: 2px solid #adadad;
+    color: #d9d9d9;
+    cursor: not-allowed
+}
+
+/* Create Post */
+
+body.uploadPage {
+    background-color: #d9d9d9;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+}
+
+.uploadPage div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    background-color: #efefef;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.uploadPage div h1 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.uploadPage form > * {
+    display: block;
+}
+
+.uploadPage form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+
+.uploadPage form textarea {
+    resize: none;
+    width: 220px;
+}
+
+.uploadPage form > input:nth-of-type(1) {
+    background: none;
+    border: 0;
+    border-bottom: 1px solid #adadad;
+}
+
+.uploadPage form > label {
+    font-family: Lato, Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+.uploadPage form > textarea {
+    margin: 10px 0;
+    background: none;
+    border: 1px solid #adadad;
+    border-radius: 10px;
+}
+
+.uploadPage form button, .uploadPage form a {
+    background-color: #06AED5;
+    border: 2px solid #06AED5;
+    border-radius: 20px;
+    padding: 2px 10px;
+    color: #efefef;
+    transition: 100ms ease-out;
+    cursor: pointer;
+    font-family: Lato;
+    font-size: 13px;
+}
+
+.uploadPage form button:hover, .uploadPage form a:hover  {
+    background-color: #efefef;
+    color: #000;
+}
