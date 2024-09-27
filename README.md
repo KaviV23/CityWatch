@@ -1,14 +1,14 @@
 # CityWatch 🏠🏨🏗️
 ![Image of Home Page](images/demo/home-page.png "Home Page")
 
-## Install with Docker
+## 🐋 Install with Docker
 Ensure docker is installed on your system. Then run the following command:  
 ```docker run --name CityWatch -p 41062:80 kaviv23/citywatch:latest```
 
 After the container has been created, **wait another 10 seconds before visiting the website for the first time**:  
 http://localhost:41062/www/CityWatch/home.php
 
-## Manual Installation
+## 🛠️ Manual Installation
 To try out the website for yourself, you will need to install [XAMPP](https://www.apachefriends.org/) on your system. Then, place this CityWatch repository into XAMPP's htdocs folder. For example:
 
 If XAMPP is installed at `C:\xampp`:
