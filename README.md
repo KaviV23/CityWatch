@@ -1,9 +1,11 @@
-# CityWatch
+# CityWatch 🏠🏨🏗️
+![Image of Home Page](images/demo/home-page.png "Home Page")
+
 ## Install with Docker
 Ensure docker is installed on your system. Then run the following command:  
 ```docker run --name CityWatch -p 41062:80 kaviv23/citywatch:latest```
 
-After the container has been created, wait another 10 seconds before visiting the website for the first time:  
+After the container has been created, **wait another 10 seconds before visiting the website for the first time**:  
 http://localhost:41062/www/CityWatch/home.php
 
 ## Manual Installation
@@ -17,10 +19,12 @@ When running this project for the first time, you will need to import the [`City
 
 Finally, you will be able to access the website at http://127.0.0.1/CityWatch/
 
-## Screenshots
-### Home Page
-![Image of Home Page](images/demo/home-page.png "Home Page")
+## Admin Account
+To use the admin features, log in with the admin account:  
+E-mail: ```admin@email.com```  
+Password:```12345678```
 
+## Screenshots
 ### Report & Feedback Hub
 ![Image of Report & Feedback Hub](images/demo/report-feedback-hub.png "Report & Feedback Hub")
 
