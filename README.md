@@ -1,7 +1,7 @@
 # CityWatch 🏠🏨🏗️
 ![Image of Home Page](images/demo/home-page.png "Home Page")
 
-## Running the Website Locally
+## 🌐 Running the Website Locally
 ### 🐋 Docker Container
 Ensure docker is installed on your system. Then run the following command:  
 ```docker run --name CityWatch -p 41062:80 kaviv23/citywatch:latest```
@@ -9,10 +9,10 @@ Ensure docker is installed on your system. Then run the following command:
 After the container has been created, **wait another 10 seconds before visiting the website for the first time**:  
 http://localhost:41062/www/CityWatch/home.php
 
-## 🛠️ Manual Installation
+### 🛠️ Manual Installation
 To run the website locally on your system manually, you will need [XAMPP](https://www.apachefriends.org/) installed on your system. Then, place [this repository](https://github.com/KaviV23/CityWatch/) into XAMPP's htdocs folder. For example:
 
-If XAMPP is installed at `C:\xampp`:
+If XAMPP is located at `C:\xampp`:
 >C:\xampp\htdocs\CityWatch\
 
 Then, open up XAMPP and start up the Apache and MySQL service.  
