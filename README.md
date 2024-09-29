@@ -1,7 +1,8 @@
 # CityWatch 🏠🏨🏗️
 ![Image of Home Page](images/demo/home-page.png "Home Page")
 
-## 🐋 Install with Docker
+## Running the Website Locally
+### 🐋 Docker Container
 Ensure docker is installed on your system. Then run the following command:  
 ```docker run --name CityWatch -p 41062:80 kaviv23/citywatch:latest```
 
@@ -9,13 +10,13 @@ After the container has been created, **wait another 10 seconds before visiting 
 http://localhost:41062/www/CityWatch/home.php
 
 ## 🛠️ Manual Installation
-To try out the website for yourself, you will need to install [XAMPP](https://www.apachefriends.org/) on your system. Then, place [this](https://github.com/KaviV23/CityWatch/) repository into XAMPP's htdocs folder. For example:
+To run the website locally on your system manually, you will need [XAMPP](https://www.apachefriends.org/) installed on your system. Then, place [this repository](https://github.com/KaviV23/CityWatch/) into XAMPP's htdocs folder. For example:
 
 If XAMPP is installed at `C:\xampp`:
 >C:\xampp\htdocs\CityWatch\
 
 Then, open up XAMPP and start up the Apache and MySQL service.  
-When running this project for the first time, you will need to first create a new database named ```CityWatch``` and import [`CityWatch-database.sql`](/CityWatch-database.sql) into it through [phpMyAdmin](http://127.0.0.1/phpmyadmin/) (make sure MySQL is running).
+When running this project for the first time, you will also need to initialize the database. First create a new database named ```CityWatch``` and then import [`CityWatch-database.sql`](/CityWatch-database.sql) into it through [phpMyAdmin](http://127.0.0.1/phpmyadmin/) (make sure MySQL is running).
 
 Finally, you will be able to access the website at http://127.0.0.1/CityWatch/home.php
 
